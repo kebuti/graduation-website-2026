@@ -1,0 +1,186 @@
+/* ==========================
+   GOOGLE FONT (Coming Soon)
+========================== */
+
+
+/* ==========================
+   COLORS
+========================== */
+
+:root{
+
+    --primary:#6A1B9A;
+
+    --secondary:#8E44AD;
+
+    --gold:#D4AF37;
+
+    --background:#F8F6FC;
+
+    --text:#2D2D2D;
+
+    --white:#FFFFFF;
+
+}
+
+
+/* ==========================
+   RESET
+========================== */
+
+*{
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+}
+
+
+/* ==========================
+   BODY
+========================== */
+
+body{
+
+    background:var(--background);
+
+    color:var(--text);
+    
+    font-family:'Poppins',sans-serif;
+}
+/* ==========================
+   HERO SECTION
+========================== */
+
+.hero{
+
+    height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+}
+
+.hero-content{
+
+    max-width:800px;
+
+    animation:fadeUp 1.5s ease;
+
+}
+}
+
+.welcome{
+
+    color:var(--gold);
+
+    letter-spacing:3px;
+
+    text-transform:uppercase;
+
+    margin-bottom:15px;
+
+}
+
+.title{
+
+    font-size:90px;
+
+    color:var(--primary);
+
+    margin-bottom:15px;
+
+    font-family:'Cormorant Garamond',serif;
+
+}
+
+.name{
+
+    font-size:40px;
+
+    margin-bottom:20px;
+
+    color:var(--primary);
+}
+
+.course{
+
+    font-size:22px;
+
+    margin-bottom:15px;
+
+}
+
+.class{
+
+    font-size:20px;
+
+    color:var(--gold);
+
+    margin-bottom:35px;
+
+}
+
+.btn{
+
+    background:var(--primary);
+
+    color:white;
+
+    border:none;
+
+    padding:18px 40px;
+
+    font-size:18px;
+
+    border-radius:50px;
+
+    cursor:pointer;
+
+    transition:.4s;
+
+}
+
+.btn:hover{
+
+    background:var(--gold);
+
+    color:black;
+
+    transform:translateY(-5px);
+
+    box-shadow:0 15px 30px rgba(0,0,0,.15);
+
+
+}
+/* ==========================
+   FADE IN ANIMATION
+========================== */
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
