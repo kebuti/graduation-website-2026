@@ -7,22 +7,110 @@
    COLORS
 ========================== */
 
-:root{
+/* ==========================
+   DESIGN SYSTEM
+========================== */
+html{
 
-    --primary:#6A1B9A;
-
-    --secondary:#8E44AD;
-
-    --gold:#D4AF37;
-
-    --background:#F8F6FC;
-
-    --text:#2D2D2D;
-
-    --white:#FFFFFF;
+    scroll-behavior:smooth;
 
 }
 
+:root{
+
+    /* Brand Colors */
+
+    --primary:#6A1B9A;
+    --secondary:#8E44AD;
+    --gold:#D4AF37;
+
+    /* Backgrounds */
+
+    --background:#FAF8F3;
+    --surface:#FFFFFF;
+
+    /* Text */
+
+    --heading:#2B1D3A;
+    --text:#5A5563;
+
+    /* Effects */
+
+    --shadow:0 15px 40px rgba(0,0,0,.08);
+
+    --radius:18px;
+
+}
+
+/* ==========================
+   NAVIGATION
+========================== */
+
+nav{
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    background:rgba(255,255,255,.92);
+
+    backdrop-filter:blur(10px);
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:18px 8%;
+
+    z-index:1000;
+
+    box-shadow:0 2px 20px rgba(0,0,0,.05);
+
+}
+
+.logo{
+
+    font-size:28px;
+
+    font-weight:700;
+
+    color:var(--primary);
+
+}
+
+nav ul{
+
+    display:flex;
+
+    list-style:none;
+
+    gap:40px;
+
+}
+
+nav a{
+
+    text-decoration:none;
+
+    color:var(--heading);
+
+    font-weight:500;
+
+    transition:.3s;
+
+}
+
+nav a:hover{
+
+    color:var(--primary);
+
+}
 
 /* ==========================
    RESET
@@ -75,6 +163,10 @@ body{
 
     animation:fadeUp 1.5s ease;
 
+    position:relative;
+    
+    z-index:2;v
+
 }
 }
 
@@ -96,7 +188,7 @@ body{
 
     color:var(--primary);
 
-    margin-bottom:15px;
+    margin-bottom:30px;
 
     font-family:'Cormorant Garamond',serif;
 
@@ -108,7 +200,9 @@ body{
 
     margin-bottom:20px;
 
-    color:var(--primary);
+    color:var(--heading);
+
+    font-weight:600;
 }
 
 .course{
@@ -116,6 +210,10 @@ body{
     font-size:22px;
 
     margin-bottom:15px;
+
+    font-weight:300;
+
+    letter-spacing:1px;
 
 }
 
@@ -128,24 +226,47 @@ body{
     margin-bottom:35px;
 
 }
+.quote{
+
+    width:70%;
+
+    margin:auto;
+
+    margin-bottom:40px;
+
+    font-size:20px;
+
+    line-height:1.8;
+
+    color:var(--text);
+
+    font-style:italic;
+
+}
 
 .btn{
 
-    background:var(--primary);
+    display:inline-block;
+
+    background:linear-gradient(135deg,var(--primary),var(--secondary));
 
     color:white;
 
+    padding:18px 45px;
+
     border:none;
-
-    padding:18px 40px;
-
-    font-size:18px;
 
     border-radius:50px;
 
+    font-size:18px;
+
+    font-weight:600;
+
     cursor:pointer;
 
-    transition:.4s;
+    transition:.4s ease;
+
+    box-shadow:var(--shadow);
 
 }
 
@@ -155,9 +276,9 @@ body{
 
     color:black;
 
-    transform:translateY(-5px);
+    transform:translateY(-6px);
 
-    box-shadow:0 15px 30px rgba(0,0,0,.15);
+     box-shadow:0 25px 45px rgba(106,27,154,.25);
 
 
 }
@@ -182,5 +303,69 @@ body{
         transform:translateY(0);
 
     }
+
+}
+.hero{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.hero::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:500px;
+
+    height:500px;
+
+    background:rgba(106,27,154,.08);
+
+    border-radius:50%;
+
+    top:-180px;
+
+    left:-120px;
+
+    filter:blur(60px);
+
+}
+
+.hero::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:350px;
+
+    height:350px;
+
+    background:rgba(212,175,55,.08);
+
+    border-radius:50%;
+
+    bottom:-120px;
+
+    right:-80px;
+
+    filter:blur(50px);
+
+}
+.line{
+
+    width:80px;
+
+    height:3px;
+
+    background:var(--gold);
+
+    margin:18px auto 30px;
+
+    border-radius:50px;
 
 }
