@@ -368,4 +368,79 @@ body{
 
     border-radius:50px;
 
+}/* ==========================
+   COUNTDOWN
+========================== */
+
+.countdown{
+
+    padding:120px 10%;
+
+    text-align:center;
+
 }
+
+.countdown h2{
+
+    font-size:42px;
+
+    color:var(--primary);
+
+    margin-bottom:60px;
+
+    font-family:'Cormorant Garamond',serif;
+
+}
+
+.countdown-container{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:30px;
+
+    flex-wrap:wrap;
+
+}
+
+.time-box{
+
+    width:180px;
+
+    padding:35px;
+
+    background:white;
+
+    border-radius:20px;
+
+    box-shadow:var(--shadow);
+
+    transition:.4s;
+
+}
+
+.time-box:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.time-box h1{
+
+    font-size:55px;
+
+    color:var(--primary);
+
+}
+
+.time-box p{
+
+    margin-top:15px;
+
+    color:var(--text);
+
+    letter-spacing:2px;
+
+}
+
