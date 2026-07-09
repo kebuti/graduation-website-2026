@@ -248,6 +248,8 @@ body{
 
     display:inline-block;
 
+     text-decoration:none;
+
     background:linear-gradient(135deg,var(--primary),var(--secondary));
 
     color:white;
@@ -444,3 +446,197 @@ body{
 
 }
 
+.countdown-text{
+
+    max-width:700px;
+
+    margin:0 auto 60px;
+
+    font-size:18px;
+
+    line-height:1.8;
+
+    color:var(--text);
+
+}
+
+/* ==========================
+   TIMELINE
+========================== */
+
+.timeline{
+
+    padding:120px 10%;
+
+    background:#fff;
+
+    text-align:center;
+
+}
+
+.timeline h2{
+
+    font-size:46px;
+
+    color:var(--primary);
+
+    margin-bottom:20px;
+
+    font-family:'Cormorant Garamond',serif;
+
+}
+
+.timeline-intro{
+
+    max-width:700px;
+
+    margin:0 auto 70px;
+
+    color:var(--text);
+
+    line-height:1.8;
+
+}
+
+.timeline-container{
+
+    position:relative;
+
+    max-width:900px;
+
+    margin:auto;
+
+}
+
+.timeline-container::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:4px;
+
+    background:var(--gold);
+
+    top:0;
+
+    bottom:0;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+}
+
+.timeline-item{
+
+    position:relative;
+
+    width:50%;
+
+    padding:25px 40px;
+
+}
+
+.timeline-item:nth-child(odd){
+
+    left:0;
+
+    text-align:right;
+
+}
+
+.timeline-item:nth-child(even){
+
+    left:50%;
+
+    text-align:left;
+
+}
+
+.timeline-content{
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:18px;
+
+    box-shadow:var(--shadow);
+
+    transition:.4s;
+
+}
+
+.timeline-content:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.year{
+
+    color:var(--gold);
+
+    font-weight:600;
+
+}
+
+.timeline-content h3{
+
+    margin:15px 0;
+
+    color:var(--heading);
+
+}
+
+/* ==========================
+   SCROLL ANIMATION
+========================== */
+
+.timeline-item{
+
+    opacity:0;
+
+    transform:translateY(60px);
+
+    transition:all .8s ease;
+
+}
+
+.timeline-item.show{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+nav a.active{
+
+    color:var(--primary);
+
+    font-weight:700;
+
+}
+
+nav a.active::after{
+
+    width:100%;
+
+}
+.logo{
+
+    font-size:30px;
+
+    font-weight:700;
+
+    color:var(--primary);
+
+}
+
+.logo span{
+
+    color:var(--gold);
+
+}
