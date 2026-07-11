@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Guestbook | Moreen Kebuti</title>
+
+    <link rel="stylesheet" href="../css/guestbook.css">
+
+</head>
+
+<body>
+<nav>
+
+    <div class="logo">
+
+        Moreen Kebuti
+
+    </div>
+
+    <ul>
+
+        <li><a href="../index.html">Home</a></li>
+
+        <li><a href="gallery.html">Gallery</a></li>
+
+        <li><a href="guestbook.html" class="active">Guestbook</a></li>
+
+    </ul>
+
+</nav>
+
+
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <span class="heart">❤️</span>
+
+        <h1>Leave a Piece of Your Heart</h1>
+
+        <p>
+
+            Your words, prayers and memories will always remind me of this
+            special milestone.
+
+            Every message you leave becomes a treasured part of my story.
+
+            Thank you for celebrating this journey with me.
+
+        </p>
+
+    </div>
+
+    <section class="guestbook">
+
+    <div class="guestbook-card">
+
+        <h2>Leave Your Wishes ✨</h2>
+
+        <p class="intro">
+
+            Whether it's a short prayer, a kind word, or a favorite memory,
+            I'd love to hear from you.
+
+        </p>
+
+        <form id="guestForm">
+
+            <div class="form-group">
+
+                <label>Your Name</label>
+
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="Enter your name"
+                    required
+                >
+
+            </div>
+
+            <div class="form-group">
+
+                <label>Relationship</label>
+
+                <select id="relationship">
+
+                    <option>Family</option>
+                    <option>Friend</option>
+                    <option>Classmate</option>
+                    <option>Lecturer</option>
+                    <option>Colleague</option>
+                    <option>Other</option>
+
+                </select>
+
+            </div>
+
+            <div class="form-group">
+
+                <label>Your Message</label>
+
+                <textarea
+                    id="message"
+                    rows="6"
+                    placeholder="Write your heartfelt wishes here..."
+                    required
+                ></textarea>
+
+            </div>
+
+            <button type="submit">
+
+                ❤️ Share Your Wishes
+
+            </button>
+
+        </form>
+        <div class="messages">
+
+    <h2>❤️ Kind Messages</h2>
+
+    <div id="messageList">
+
+        <p class="empty">
+
+            No wishes yet.
+
+            Be the first to leave a message!
+
+        </p>
+
+    </div>
+
+</div>
+
+    </div>
+
+</section>
+
+</section>
+
+    <script src="../js/guestbook.js"></script>
+
+</body>
+
+</html>

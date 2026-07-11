@@ -1,0 +1,260 @@
+*{
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+    font-family:Poppins,sans-serif;
+
+}
+
+body{
+
+    background:#F8F5FC;
+
+    color:#333;
+
+}
+
+.hero{
+
+    text-align:center;
+
+    padding:90px 20px 60px;
+
+}
+
+.hero h1{
+
+    font-size:52px;
+
+    color:#6A1B9A;
+
+    margin-top:15px;
+
+    margin-bottom:20px;
+
+}
+
+.hero p{
+
+    max-width:750px;
+
+    margin:auto;
+
+    line-height:1.8;
+
+    font-size:18px;
+
+    color:#555;
+
+}
+
+.heart{
+
+    font-size:55px;
+
+}
+/*style the carrd*/
+
+.guestbook{
+
+    display:flex;
+
+    justify-content:center;
+
+    padding:20px 20px 80px;
+
+}
+/*Card heading */
+.guestbook-card{
+
+    width:100%;
+
+    max-width:700px;
+
+    background:white;
+
+    padding:45px;
+
+    border-radius:22px;
+
+    box-shadow:0 20px 45px rgba(0,0,0,.08);
+
+}
+
+.guestbook-card h2{
+
+    color:#6A1B9A;
+
+    margin-bottom:15px;
+
+    text-align:center;
+
+}
+
+.intro{
+
+    text-align:center;
+
+    color:#666;
+
+    margin-bottom:35px;
+
+    line-height:1.7;
+
+}
+/*FORM SYLING */
+.form-group{
+
+    margin-bottom:25px;
+
+}
+label{
+
+    display:block;
+
+    margin-bottom:8px;
+
+    font-weight:600;
+
+}
+/*INPUTS */
+input,
+select,
+textarea{
+
+    width:100%;
+
+    padding:16px;
+
+    border:2px solid #ddd;
+
+    border-radius:12px;
+
+    font-size:16px;
+
+    transition:.3s;
+
+}
+/*FOCUS EFFECTS*/
+input:focus,
+select:focus,
+textarea:focus{
+
+    border-color:#6A1B9A;
+
+    outline:none;
+
+    box-shadow:0 0 12px rgba(106,27,154,.2);
+
+}
+
+/*Button*/
+button{
+
+    width:100%;
+
+    padding:18px;
+
+    border:none;
+
+    border-radius:14px;
+
+    font-size:18px;
+
+    cursor:pointer;
+
+    color:white;
+
+    background:linear-gradient(
+        135deg,
+        #6A1B9A,
+        #8E24AA
+    );
+
+    transition:.35s;
+
+}
+
+button:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 12px 25px rgba(106,27,154,.35);
+
+}
+
+.message-card{
+
+    background:#fff;
+
+    padding:20px;
+
+    margin-top:20px;
+
+    border-radius:15px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+    animation:fadeUp .5s ease;
+
+}
+
+.message-card h3{
+
+    color:#6A1B9A;
+
+    margin-bottom:8px;
+
+}
+
+.message-card small{
+
+    color:#999;
+
+}
+
+.message-card p{
+
+    margin-top:15px;
+
+    line-height:1.6;
+
+}
+
+/*animation for the message  cards*/
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(20px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/*style the date*/
+.date{
+
+    display:block;
+
+    margin-top:15px;
+
+    color:#999;
+
+    font-size:13px;
+
+}

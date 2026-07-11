@@ -33,7 +33,15 @@ galleryImages.forEach(function(image, index){
 });
 function showImage(index){
 
-    lightboxImage.src = galleryImages[index].src;
+    lightboxImage.classList.add("fade");
+
+    setTimeout(function(){
+
+        lightboxImage.src = galleryImages[index].src;
+
+        lightboxImage.classList.remove("fade");
+
+    },150);
 
 }
 
@@ -45,6 +53,16 @@ closeButton.addEventListener("click", function(){
 
 });
 
+// Close when clicking outside the image
+lightbox.addEventListener("click", function(event){
+
+    if(event.target === lightbox){
+
+        lightbox.classList.remove("show");
+
+    }
+
+});
 nextButton.addEventListener("click", function(){
 
     currentIndex++;
@@ -70,5 +88,33 @@ prevButton.addEventListener("click", function(){
     }
 
     showImage(currentIndex);
+
+});
+
+// Keyboard shortcuts
+document.addEventListener("keydown", function(event){
+
+    // Only work if lightbox is open
+    if(!lightbox.classList.contains("show")){
+        return;
+    }
+
+    if(event.key === "ArrowRight"){
+
+        nextButton.click();
+
+    }
+
+    else if(event.key === "ArrowLeft"){
+
+        prevButton.click();
+
+    }
+
+    else if(event.key === "Escape"){
+
+        lightbox.classList.remove("show");
+
+    }
 
 });
