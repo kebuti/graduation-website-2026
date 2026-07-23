@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Memory Wall | Moreen Kebuti</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/memory-wall.css">
+
+</head>
+
+<body>
+
+    <div class="floating-bg">
+
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+
+</div>
+
+<nav>
+
+    <div class="logo">Moreen Kebuti</div>
+
+    <ul>
+
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../index.html#journey">Journey</a></li>
+        <li><a href="../gallery.html">Gallery</a></li>
+        <li><a href="memory-wall.html" class="active">Memory Wall</a></li>
+        <li><a href="guestbook.html">Guestbook</a></li>
+
+    </ul>
+
+</nav>
+
+<section class="memory-page">
+
+    <div class="memory-header">
+
+        <h1>💜 Memory Wall</h1>
+
+        <p>
+
+            Every photo shared here is more than just a picture.
+
+            It's a smile, a memory, and a beautiful reminder of the journey we've shared.
+
+            Thank you for helping me preserve these moments forever.
+
+        </p>
+
+    </div>
+
+    <section class="stats-section">
+
+    <div class="stat-card">
+
+        <h2 id="memoryCount">0</h2>
+
+        <p>💜 Memories Shared</p>
+
+    </div>
+
+    <div class="stat-card">
+
+        <h2 id="photoCount">0</h2>
+
+        <p>📷 Photos Uploaded</p>
+
+    </div>
+
+    <div class="stat-card">
+
+        <h2 id="relationshipCount">0</h2>
+
+        <p>👨‍👩‍👧 Relationships</p>
+
+    </div>
+
+    <div class="stat-card">
+
+        <h2 id="locationCount">0</h2>
+
+        <p>📍 Locations</p>
+
+    </div>
+
+</section>
+
+    <div class="memory-container">
+
+        <!-- Upload Form -->
+
+        <div class="upload-card">
+
+            <h2>📷 Share A Memory</h2>
+
+            <div class="upload-icon">
+    🎓
+</div>
+
+            <form id="memoryForm">
+
+                <div class="form-group">
+
+                    <label>Your Name</label>
+
+                    <input
+                        type="text"
+                        id="name"
+                        required>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label>Relationship</label>
+
+                    <select id="relationship">
+
+                        <option>Family</option>
+                        <option>Friend</option>
+                        <option>Classmate</option>
+                        <option>Lecturer</option>
+                        <option>Colleague</option>
+                        <option>Other</option>
+
+                    </select>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label>Caption</label>
+
+                    <textarea
+                        id="caption"
+                        rows="4"
+                        required></textarea>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label>Location</label>
+
+                    <input
+                        type="text"
+                        id="location">
+
+                </div>
+
+                <div class="form-group">
+
+                    <label>Choose Photo</label>
+
+                    <input
+                        type="file"
+                        id="photo"
+                        accept="image/*"
+                        required>
+
+                </div>
+
+                <div class="image-preview">
+
+    <img id="previewImage" src="" alt="Preview">
+
+</div>
+
+                <button type="submit">
+
+                    💜 Share My Memory
+
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+
+<div class="memory-toolbar">
+
+    <input
+        type="text"
+        id="searchInput"
+        placeholder="🔍 Search memories...">
+
+    <select id="filterRelationship">
+
+        <option value="All">All Relationships</option>
+        <option value="Family">Family</option>
+        <option value="Friend">Friend</option>
+        <option value="Classmate">Classmate</option>
+        <option value="Lecturer">Lecturer</option>
+        <option value="Colleague">Colleague</option>
+        <option value="Other">Other</option>
+
+    </select>
+
+</div>
+
+<div class="section-divider">
+
+    ✨ ✦ ✨
+
+</div>
+
+<section class="wall-section">
+
+    <h2>✨ Shared Memories</h2>
+
+    <div id="memoryList" class="memory-grid">
+
+        <div class="placeholder-card">
+
+            <div class="placeholder-icon">📸</div>
+
+            <h3>Your Memories Will Appear Here</h3>
+
+            <p>
+
+                Be the first person to share
+                a graduation memory.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<div id="lightbox" class="lightbox">
+
+    <span id="closeLightbox">&times;</span>
+
+    <img id="lightboxImage">
+
+    <div id="lightboxCaption"></div>
+
+</div>
+
+
+<div id="toast" class="toast">
+
+    🎉 Memory shared successfully!
+
+</div>
+
+<div id="confetti"></div>
+
+<footer class="memory-footer-page">
+
+    <p>
+
+        💜 Thank you for being part of my graduation journey.
+
+    </p>
+
+    <small>
+
+        Built with love by Moreen Kebuti • Class of 2026 🎓
+
+    </small>
+
+</footer>
+
+<script type="module" src="js/memory-wall.js"></script>
+
+<button id="scrollTopBtn">
+    ⬆
+</button>
+
+</body>
+
+</html>

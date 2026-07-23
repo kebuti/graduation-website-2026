@@ -1,3 +1,7 @@
+/*======================================
+    RESET
+======================================*/
+
 *{
 
     margin:0;
@@ -6,153 +10,388 @@
 
     box-sizing:border-box;
 
-    font-family:Poppins,sans-serif;
-
 }
 
 body{
 
-    background:#F8F5FC;
+    font-family:Poppins,sans-serif;
+
+    background:#F7F3FC;
 
     color:#333;
 
 }
 
-.hero{
+/*======================================
+    PAGE
+======================================*/
+
+.guestbook-page{
+
+    padding-top:120px;
+
+    padding-bottom:70px;
+
+}
+
+/*======================================
+    HEADER
+======================================*/
+
+.guestbook-header{
 
     text-align:center;
 
-    padding:90px 20px 60px;
+    margin-bottom:50px;
 
 }
+.guestbook-header h1{
 
-.hero h1{
-
-    font-size:52px;
-
-    color:#6A1B9A;
-
-    margin-top:15px;
-
-    margin-bottom:20px;
-
-}
-
-.hero p{
-
-    max-width:750px;
-
-    margin:auto;
-
-    line-height:1.8;
-
-    font-size:18px;
-
-    color:#555;
-
-}
-
-.heart{
-
-    font-size:55px;
-
-}
-/*style the carrd*/
-
-.guestbook{
-
-    display:flex;
-
-    justify-content:center;
-
-    padding:20px 20px 80px;
-
-}
-/*Card heading */
-.guestbook-card{
-
-    width:100%;
-
-    max-width:700px;
-
-    background:white;
-
-    padding:45px;
-
-    border-radius:22px;
-
-    box-shadow:0 20px 45px rgba(0,0,0,.08);
-
-}
-
-.guestbook-card h2{
+    font-size:54px;
 
     color:#6A1B9A;
 
     margin-bottom:15px;
 
+    letter-spacing:1px;
+
+}
+
+.guestbook-header p{
+
+    max-width:700px;
+
+    margin:auto;
+
+    color:#666;
+
+    line-height:1.9;
+
+    font-size:18px;
+
+}
+/*======================================
+    MAIN CONTAINER
+======================================*/
+
+.guestbook-container{
+
+    width:90%;
+    max-width:1400px;
+    margin:auto;
+
+    display:grid;
+    grid-template-columns:2fr 1fr;
+    gap:40px;
+
+    padding:40px;
+
+    background:white;
+
+    border:3px solid #D8C5F3;
+
+    border-radius:30px;
+
+    position:relative;
+
+    box-shadow:0 20px 50px rgba(106,27,154,.08);
+
+}
+
+.guestbook-header::before{
+
+    content:"✦ ✦ ✦";
+
+    display:block;
+
+    color:#C9A7EB;
+
+    font-size:20px;
+
+    margin-bottom:15px;
+
+}
+
+.guestbook-header::after{
+
+    content:"✦ ✦ ✦";
+
+    display:block;
+
+    color:#C9A7EB;
+
+    font-size:20px;
+
+    margin-top:15px;
+
+}
+.messages-section{
+
+    background:white;
+
+    border-radius:25px;
+
+    padding:35px;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+
+     padding-right:30px;
+
+    border-right:2px solid #F1E8FC;
+
+
+}
+
+.messages-section h2{
+
+    color:#6A1B9A;
+
+    margin-bottom:30px;
+
+    font-size:28px;
+
+}
+
+#messageList{
+
+    display:grid;
+
+    gap:20px;
+
+}
+.form-section{
+
+    padding-left:15px;
+
+    position:sticky;
+
+    top:120px;
+
+}
+/*======================================
+    FORM CARD
+======================================*/
+
+.guestbook-card{
+
+    background:#FFFFFF;
+
+    border-radius:28px;
+
+    padding:40px;
+
+    border:2px solid #EFE4FB;
+
+    box-shadow:0 20px 45px rgba(106,27,154,.08);
+
+    transition:.4s;
+
+}
+.guestbook-card h2{
+
+    font-size:30px;
+
+    color:#6A1B9A;
+
+    margin-bottom:12px;
+
     text-align:center;
 
 }
 
+.guestbook-card:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:0 28px 60px rgba(106,27,154,.15);
+
+}
 .intro{
 
     text-align:center;
 
-    color:#666;
+    color:#777;
+
+    line-height:1.8;
 
     margin-bottom:35px;
 
-    line-height:1.7;
+}
+
+/*======================================
+    MESSAGE CARD
+======================================*/
+
+.message-card{
+
+    background:#FFFFFF;
+
+    border:2px solid #EFE4FB;
+
+    border-radius:20px;
+
+    padding:25px;
+
+    margin-bottom:20px;
+
+    position:relative;
+
+    transition:all .35s ease;
+
+    box-shadow:0 8px 25px rgba(106,27,154,.06);
 
 }
-/*FORM SYLING */
-.form-group{
 
-    margin-bottom:25px;
+.message-card:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:0 18px 40px rgba(106,27,154,.15);
 
 }
-label{
 
-    display:block;
+.message-card h3{
 
-    margin-bottom:8px;
+    color:#6A1B9A;
+
+    font-size:22px;
+
+    margin-bottom:6px;
+
+}
+
+.message-card small{
+
+    display:inline-block;
+
+    background:#F3EBFC;
+
+    color:#6A1B9A;
+
+    padding:6px 14px;
+
+    border-radius:50px;
+
+    font-size:13px;
+
+    margin-bottom:18px;
 
     font-weight:600;
 
 }
-/*INPUTS */
+
+.message-card p{
+
+    color:#555;
+
+    line-height:1.8;
+
+    font-size:16px;
+
+    margin-bottom:18px;
+
+}
+
+.date{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    color:#999;
+
+    font-size:13px;
+
+    margin-top:18px;
+
+}
+
+.message-card::before{
+
+    content:"🎓";
+
+    position:absolute;
+
+    top:18px;
+
+    right:18px;
+
+    font-size:22px;
+
+    opacity:.18;
+
+}
+
+.empty{
+
+    text-align:center;
+
+    padding:70px 20px;
+
+    color:#999;
+
+    border:2px dashed #DDD;
+
+    border-radius:20px;
+
+    background:#FCFAFE;
+
+}
+
+label{
+
+    display:block;
+
+    margin-bottom:10px;
+
+    font-weight:600;
+
+    color:#5B2C83;
+
+}
+
 input,
 select,
 textarea{
 
     width:100%;
 
-    padding:16px;
+    padding:16px 18px;
 
-    border:2px solid #ddd;
+    border:2px solid #E7D8F6;
 
-    border-radius:12px;
+    border-radius:16px;
+
+    background:#FCFAFE;
 
     font-size:16px;
 
-    transition:.3s;
+    transition:.35s;
 
 }
-/*FOCUS EFFECTS*/
+
 input:focus,
 select:focus,
 textarea:focus{
 
-    border-color:#6A1B9A;
-
     outline:none;
 
-    box-shadow:0 0 12px rgba(106,27,154,.2);
+    border-color:#8E24AA;
+
+    background:white;
+
+    box-shadow:0 0 18px rgba(142,36,170,.15);
 
 }
 
-/*Button*/
+textarea{
+
+    resize:none;
+
+}
+
 button{
 
     width:100%;
@@ -161,18 +400,24 @@ button{
 
     border:none;
 
-    border-radius:14px;
-
-    font-size:18px;
+    border-radius:16px;
 
     cursor:pointer;
+
+    font-size:17px;
+
+    font-weight:600;
 
     color:white;
 
     background:linear-gradient(
+
         135deg,
+
         #6A1B9A,
-        #8E24AA
+
+        #9C27B0
+
     );
 
     transition:.35s;
@@ -183,56 +428,234 @@ button:hover{
 
     transform:translateY(-3px);
 
-    box-shadow:0 12px 25px rgba(106,27,154,.35);
+    box-shadow:0 15px 35px rgba(106,27,154,.35);
 
 }
 
-.message-card{
+button:active{
 
-    background:#fff;
-
-    padding:20px;
-
-    margin-top:20px;
-
-    border-radius:15px;
-
-    box-shadow:0 8px 20px rgba(0,0,0,.08);
-
-    animation:fadeUp .5s ease;
+    transform:scale(.98);
 
 }
+/*space between inputs*/
 
-.message-card h3{
+.form-group{
 
-    color:#6A1B9A;
-
-    margin-bottom:8px;
-
-}
-
-.message-card small{
-
-    color:#999;
+    margin-bottom:24px;
 
 }
-
-.message-card p{
-
-    margin-top:15px;
-
-    line-height:1.6;
-
-}
-
-/*animation for the message  cards*/
+/*  */
 @keyframes fadeUp{
+
+from{
+
+    opacity:0;
+
+    transform:translateY(35px) scale(.95);
+
+}
+
+to{
+
+    opacity:1;
+
+    transform:translateY(0) scale(1);
+
+}
+
+}
+
+.message-card:nth-child(even){
+
+    background:#FCF9FF;
+
+}
+
+/*======================================
+    TOAST
+======================================*/
+
+.toast{
+
+    position:fixed;
+
+    bottom:35px;
+
+    right:35px;
+
+   background:linear-gradient(
+135deg,
+#6A1B9A,
+#9C27B0
+);
+
+    color:white;
+
+    padding:18px 28px;
+
+    border-radius:16px;
+
+    box-shadow:0 18px 40px rgba(0,0,0,.25);
+
+    font-size:16px;
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transform:translateY(30px);
+
+    transition:.4s;
+
+    z-index:9999;
+
+}
+
+.toast.show{
+
+    opacity:1;
+
+    visibility:visible;
+
+    transform:translateY(0);
+
+}
+
+/*======================================
+    CELEBRATION
+======================================*/
+
+.celebration{
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(0,0,0,.55);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transition:.8s ease;
+
+    z-index:99999;
+
+}
+
+.celebration.show{
+
+    opacity:1;
+
+    visibility:visible;
+
+}
+
+.celebration-card{
+
+    background:white;
+
+    width:90%;
+
+    max-width:520px;
+
+    padding:50px;
+
+    border-radius:30px;
+
+    text-align:center;
+
+    position:relative;
+
+    overflow:hidden;
+
+    box-shadow:0 30px 80px rgba(0,0,0,.25);
+
+}
+
+.cap{
+
+    font-size:80px;
+
+    display:inline-block;
+
+}
+
+@keyframes capToss{
+
+    0%{
+
+        transform:translateY(0) rotate(0);
+
+    }
+
+    40%{
+
+        transform:translateY(-130px) rotate(-18deg);
+
+    }
+
+    70%{
+
+        transform:translateY(-190px) rotate(12deg);
+
+    }
+
+    100%{
+
+        transform:translateY(-260px) rotate(25deg);
+
+        opacity:0;
+
+    }
+
+}
+
+.celebration.show .cap{
+
+    animation:capToss 3.5s ease forwards;
+
+}
+
+.cheers{
+
+    margin-top:35px;
+
+    font-size:46px;
+
+    animation:glow 2.4s infinite alternate;
+
+}
+
+@keyframes glow{
+
+    from{
+
+        transform:scale(1);
+
+    }
+
+    to{
+
+        transform:scale(1.12);
+
+    }
+
+}
+
+@keyframes popIn{
 
     from{
 
         opacity:0;
 
-        transform:translateY(20px);
+        transform:scale(.75);
 
     }
 
@@ -240,21 +663,50 @@ button:hover{
 
         opacity:1;
 
-        transform:translateY(0);
+        transform:scale(1);
 
     }
 
 }
 
-/*style the date*/
-.date{
+@keyframes glow{
 
-    display:block;
+    0%{
 
-    margin-top:15px;
+        transform:rotate(-8deg) scale(1);
 
-    color:#999;
+    }
 
-    font-size:13px;
+    50%{
+
+        transform:rotate(8deg) scale(1.12);
+
+    }
+
+    100%{
+
+        transform:rotate(-8deg) scale(1);
+
+    }
+
+}
+
+.celebration-card h2{
+
+    color:#6A1B9A;
+
+    margin:25px 0 15px;
+
+    font-size:34px;
+
+    animation: popIn .8s ease;
+
+}
+
+.celebration-card p{
+
+    line-height:1.8;
+
+    color:#555;
 
 }

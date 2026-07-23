@@ -1,0 +1,453 @@
+/* ==========================
+   PAGE
+========================== */
+
+body{
+    background:#faf5ff;
+    color:#2d1b4e;
+}
+
+/* ==========================
+   HERO
+========================== */
+
+.next-hero{
+
+    text-align:center;
+
+    padding:120px 20px 80px;
+
+    background:linear-gradient(135deg,#6A1B9A,#8E24AA,#C084FC);
+
+    color:white;
+
+}
+
+.next-hero h1{
+
+    font-size:3rem;
+
+    margin-bottom:20px;
+
+}
+
+.next-hero p{
+
+    max-width:850px;
+
+    margin:auto;
+
+    font-size:1.15rem;
+
+    line-height:1.9;
+
+}
+
+/* ==========================
+   SECTIONS
+========================== */
+
+section{
+
+    padding:90px 20px;
+
+}
+
+section h2{
+
+    text-align:center;
+
+    font-size:2rem;
+
+    margin-bottom:30px;
+
+    color:#6A1B9A;
+
+}
+
+section p{
+
+    max-width:900px;
+
+    margin:auto;
+
+    text-align:center;
+
+    line-height:1.9;
+
+    font-size:1.08rem;
+
+}
+
+/* ==========================
+   CONNECT CARDS
+========================== */
+
+.connect-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+
+    gap:30px;
+
+    margin-top:50px;
+
+}
+.connect-card{
+
+    background:rgba(255,255,255,.35);
+
+    backdrop-filter:blur(15px);
+
+    -webkit-backdrop-filter:blur(15px);
+
+    border:1px solid rgba(255,255,255,.3);
+
+    padding:35px;
+
+    border-radius:24px;
+
+    text-align:center;
+
+    box-shadow:0 20px 45px rgba(106,27,154,.12);
+
+    transition:.4s;
+
+     text-decoration:none;
+
+    color:inherit;
+
+}
+.connect-card:hover{
+
+    transform:translateY(-12px) scale(1.03);
+
+    box-shadow:0 30px 60px rgba(106,27,154,.25);
+
+    
+
+}
+
+.connect-card h3{
+
+    color:#7B1FA2;
+
+    margin-bottom:15px;
+
+}
+
+/* ==========================
+   QUOTE
+========================== */
+
+.quote-section{
+
+    background:#f3e8ff;
+
+}
+
+blockquote{
+
+    font-size:2rem;
+
+    text-align:center;
+
+    font-style:italic;
+
+    color:#6A1B9A;
+
+    max-width:850px;
+
+    margin:auto;
+
+}
+
+/* ==========================
+   BUTTON
+========================== */
+
+.cta{
+
+    text-align:center;
+
+}
+
+.cta-btn{
+
+    display:inline-block;
+
+    margin-top:30px;
+
+    padding:18px 45px;
+
+    background:#7B1FA2;
+
+    color:white;
+
+    text-decoration:none;
+
+    border-radius:50px;
+
+    font-weight:bold;
+
+    transition:.3s;
+
+}
+
+.cta-btn:hover{
+
+    background:#5E1380;
+
+    transform:translateY(-4px);
+
+}
+
+/* ==========================
+   FOOTER
+========================== */
+
+footer{
+
+    padding:70px 20px;
+
+    text-align:center;
+
+    background:#2d1b4e;
+
+    color:white;
+
+}
+
+footer h3{
+
+    font-size:2rem;
+
+    margin-bottom:20px;
+
+}
+
+footer small{
+
+    opacity:.8;
+
+}
+
+/* ==========================
+   MOBILE
+========================== */
+
+@media(max-width:768px){
+
+.next-hero h1{
+
+    font-size:2.3rem;
+
+}
+
+blockquote{
+
+    font-size:1.4rem;
+
+}
+
+}
+
+/* ==========================
+   FLOATING BACKGROUND
+========================== */
+
+.floating-bg{
+
+    position:fixed;
+
+    inset:0;
+
+    overflow:hidden;
+
+    pointer-events:none;
+
+    z-index:0;
+
+}
+
+.floating-bg span{
+
+    position:absolute;
+
+    display:block;
+
+    width:90px;
+
+    height:90px;
+
+    border-radius:50%;
+
+   background: rgba(123,31,162,.35);
+
+    animation:floatUp 18s linear infinite;
+
+}
+
+.floating-bg span:nth-child(1){
+
+    left:10%;
+
+    width:50px;
+
+    height:50px;
+
+    animation-duration:15s;
+
+}
+
+.floating-bg span:nth-child(2){
+
+    left:25%;
+
+    animation-duration:20s;
+
+}
+
+.floating-bg span:nth-child(3){
+
+    left:40%;
+
+    width:70px;
+
+    height:70px;
+
+}
+
+.floating-bg span:nth-child(4){
+
+    left:58%;
+
+}
+
+.floating-bg span:nth-child(5){
+
+    left:70%;
+
+    width:45px;
+
+    height:45px;
+
+}
+
+.floating-bg span:nth-child(6){
+
+    left:82%;
+
+}
+
+.floating-bg span:nth-child(7){
+
+    left:92%;
+
+    width:60px;
+
+    height:60px;
+
+}
+
+.floating-bg span:nth-child(8){
+
+    left:50%;
+
+    animation-duration:22s;
+
+}
+
+@keyframes floatUp{
+
+    from{
+
+        transform:translateY(100vh) scale(0);
+
+        opacity:0;
+
+    }
+
+    30%{
+
+        opacity:.5;
+
+    }
+
+    to{
+
+        transform:translateY(-120vh) scale(1.2);
+
+        opacity:0;
+
+    }
+
+}
+
+nav,
+.next-hero,
+.thank-you,
+.connect-section,
+.quote-section,
+.cta,
+footer{
+
+    position: relative;
+
+    z-index: 2;
+
+}
+
+.connect-icon{
+
+    font-size:3rem;
+
+    margin-bottom:15px;
+
+    animation:floatIcon 3s ease-in-out infinite;
+
+}
+
+@keyframes floatIcon{
+
+    0%,100%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-10px);
+
+    }
+
+}
+.connect-card p{
+
+    transition:.3s;
+
+}
+
+.connect-card:hover p{
+
+    color:#7B1FA2;
+
+    font-weight:600;
+
+}
+
+.connect-note{
+
+    max-width:650px;
+
+    margin:20px auto 40px;
+
+    text-align:center;
+
+    color:#666;
+
+    font-size:1.05rem;
+
+}

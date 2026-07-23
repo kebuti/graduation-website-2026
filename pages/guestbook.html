@@ -9,6 +9,8 @@
 
     <title>Guestbook | Moreen Kebuti</title>
 
+    <link rel="stylesheet" href="../css/style.css">
+
     <link rel="stylesheet" href="../css/guestbook.css">
 
 </head>
@@ -26,7 +28,9 @@
 
         <li><a href="../index.html">Home</a></li>
 
-        <li><a href="gallery.html">Gallery</a></li>
+       <li><a href="../index.html#journey">Journey</a></li>
+
+        <li><a href="../gallery.html">Gallery</a></li>
 
         <li><a href="guestbook.html" class="active">Guestbook</a></li>
 
@@ -35,119 +39,154 @@
 </nav>
 
 
+<section class="guestbook-page">
 
-<section class="hero">
+    <div class="guestbook-header">
 
-    <div class="hero-content">
+        <h1>💜 Graduation Guestbook</h1>
 
-        <span class="heart">❤️</span>
+        <p>
+            Every wish, prayer and memory shared here becomes
+            a treasured part of my graduation journey.
+            Thank you for celebrating this milestone with me.
+        </p>
 
-        <h1>Leave a Piece of Your Heart</h1>
+    </div>
+
+    <div class="guestbook-container">
+
+        <!-- LEFT SIDE : Messages -->
+
+        <div class="messages-section">
+
+            <h2>❤️ Messages From Friends & Family</h2>
+
+            <div id="messageList">
+
+                <p class="empty">
+                    No wishes yet.
+                    Be the first to leave a message! 💜
+                </p>
+
+            </div>
+
+        </div>
+
+        <!-- RIGHT SIDE : Form -->
+
+        <div class="form-section">
+
+            <div class="guestbook-card">
+
+                <h2>Leave Your Wishes ✨</h2>
+
+                <p class="intro">
+
+                    Whether it's a prayer, a memory, or a few
+                    encouraging words, I'd love to hear from you.
+
+                </p>
+
+                <form id="guestForm">
+
+                    <div class="form-group">
+
+                        <label>Your Name</label>
+
+                        <input
+                            type="text"
+                            id="name"
+                            placeholder="Enter your name"
+                            required>
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label>Relationship</label>
+
+                        <select id="relationship">
+
+                            <option>Family</option>
+                            <option>Friend</option>
+                            <option>Classmate</option>
+                            <option>Lecturer</option>
+                            <option>Colleague</option>
+                            <option>Other</option>
+
+                        </select>
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label>Your Message</label>
+
+                        <textarea
+                            id="message"
+                            rows="6"
+                            placeholder="Write your heartfelt wishes here..."
+                            required></textarea>
+
+                    </div>
+
+                    <button type="submit">
+
+                        🎓 Sign My Guestbook
+
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<div id="toast" class="toast">
+
+    💜 Thank you for celebrating this milestone with me!
+
+</div>
+
+<div id="celebration" class="celebration">
+
+    <div class="celebration-card">
+
+        <div class="cap-container">
+
+            <div class="cap">🎓</div>
+
+        </div>
+
+        <h2>CHEERS TO THIS MILESTONE!</h2>
 
         <p>
 
-            Your words, prayers and memories will always remind me of this
-            special milestone.
+            Your heartfelt message has been added to my
+            Graduation Guestbook.
 
-            Every message you leave becomes a treasured part of my story.
+            <br><br>
 
             Thank you for celebrating this journey with me.
 
         </p>
 
-    </div>
+        <div class="cheers">
 
-    <section class="guestbook">
+            🥂 ✨ 🥂
 
-    <div class="guestbook-card">
-
-        <h2>Leave Your Wishes ✨</h2>
-
-        <p class="intro">
-
-            Whether it's a short prayer, a kind word, or a favorite memory,
-            I'd love to hear from you.
-
-        </p>
-
-        <form id="guestForm">
-
-            <div class="form-group">
-
-                <label>Your Name</label>
-
-                <input
-                    type="text"
-                    id="name"
-                    placeholder="Enter your name"
-                    required
-                >
-
-            </div>
-
-            <div class="form-group">
-
-                <label>Relationship</label>
-
-                <select id="relationship">
-
-                    <option>Family</option>
-                    <option>Friend</option>
-                    <option>Classmate</option>
-                    <option>Lecturer</option>
-                    <option>Colleague</option>
-                    <option>Other</option>
-
-                </select>
-
-            </div>
-
-            <div class="form-group">
-
-                <label>Your Message</label>
-
-                <textarea
-                    id="message"
-                    rows="6"
-                    placeholder="Write your heartfelt wishes here..."
-                    required
-                ></textarea>
-
-            </div>
-
-            <button type="submit">
-
-                ❤️ Share Your Wishes
-
-            </button>
-
-        </form>
-        <div class="messages">
-
-    <h2>❤️ Kind Messages</h2>
-
-    <div id="messageList">
-
-        <p class="empty">
-
-            No wishes yet.
-
-            Be the first to leave a message!
-
-        </p>
+        </div>
 
     </div>
 
 </div>
 
-    </div>
 
-</section>
-
-</section>
-
-    <script src="../js/guestbook.js"></script>
-
+<script type="module" src="../js/guestbook.js"></script>
 </body>
 
 </html>

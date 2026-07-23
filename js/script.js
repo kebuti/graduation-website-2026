@@ -113,3 +113,60 @@ window.addEventListener("scroll", () => {
     });
 
 });
+// ==========================
+// WEBSITE LOADER
+// ==========================
+
+window.addEventListener("load", () => {
+
+    const loader = document.getElementById("loader");
+
+    const message = document.getElementById("loaderMessage");
+
+    const messages = [
+
+        "✨ Dream. Believe. Achieve.",
+
+        "📚 Years of hard work...",
+
+        "💜 Countless memories...",
+
+        "🎉 One unforgettable graduation.",
+
+        "🎓 Welcome to my Graduation Journey."
+
+    ];
+
+    let index = 0;
+
+    message.textContent = messages[0];
+
+    const interval = setInterval(() => {
+
+        index++;
+
+        if(index < messages.length){
+
+            message.style.opacity = "0";
+
+            setTimeout(() => {
+
+                message.textContent = messages[index];
+
+                message.style.opacity = "1";
+
+            },500);
+
+        }
+
+    },2200);   // ← each message stays for 2.5 seconds
+
+    setTimeout(() => {
+
+        clearInterval(interval);
+
+        loader.classList.add("loader-hidden");
+
+    },11000); // 5 messages × 2.5 seconds
+
+});
