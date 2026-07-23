@@ -79,63 +79,7 @@ section p{
 
 }
 
-/* ==========================
-   CONNECT CARDS
-========================== */
 
-.connect-grid{
-
-    display:grid;
-
-    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-
-    gap:30px;
-
-    margin-top:50px;
-
-}
-.connect-card{
-
-    background:rgba(255,255,255,.35);
-
-    backdrop-filter:blur(15px);
-
-    -webkit-backdrop-filter:blur(15px);
-
-    border:1px solid rgba(255,255,255,.3);
-
-    padding:35px;
-
-    border-radius:24px;
-
-    text-align:center;
-
-    box-shadow:0 20px 45px rgba(106,27,154,.12);
-
-    transition:.4s;
-
-     text-decoration:none;
-
-    color:inherit;
-
-}
-.connect-card:hover{
-
-    transform:translateY(-12px) scale(1.03);
-
-    box-shadow:0 30px 60px rgba(106,27,154,.25);
-
-    
-
-}
-
-.connect-card h3{
-
-    color:#7B1FA2;
-
-    margin-bottom:15px;
-
-}
 
 /* ==========================
    QUOTE
@@ -398,56 +342,77 @@ footer{
     z-index: 2;
 
 }
+/* ==========================
+   SOCIAL LINKS
+========================== */
 
-.connect-icon{
+.social-links{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:35px;
+
+    flex-wrap:wrap;
+
+    margin-top:60px;
+
+}
+
+.social-links a{
+
+    width:140px;
+
+    height:140px;
+
+    border-radius:25px;
+
+    background:rgba(255,255,255,.65);
+
+    backdrop-filter:blur(12px);
+
+    -webkit-backdrop-filter:blur(12px);
+
+    text-decoration:none;
+
+    color:#6A1B9A;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:15px;
+
+    box-shadow:0 20px 40px rgba(106,27,154,.12);
+
+    transition:.35s;
+
+}
+
+.social-links a i{
 
     font-size:3rem;
 
-    margin-bottom:15px;
-
-    animation:floatIcon 3s ease-in-out infinite;
-
 }
 
-@keyframes floatIcon{
+.social-links a span{
 
-    0%,100%{
-
-        transform:translateY(0);
-
-    }
-
-    50%{
-
-        transform:translateY(-10px);
-
-    }
-
-}
-.connect-card p{
-
-    transition:.3s;
-
-}
-
-.connect-card:hover p{
-
-    color:#7B1FA2;
+    font-size:1rem;
 
     font-weight:600;
 
 }
 
-.connect-note{
+.social-links a:hover{
 
-    max-width:650px;
+    transform:translateY(-10px) scale(1.05);
 
-    margin:20px auto 40px;
-
-    text-align:center;
-
-    color:#666;
-
-    font-size:1.05rem;
+    box-shadow:0 30px 60px rgba(106,27,154,.25);
 
 }
+

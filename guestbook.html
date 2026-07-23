@@ -34,6 +34,13 @@
 
         <li><a href="guestbook.html" class="active">Guestbook</a></li>
 
+        
+     <li><a href="memory-wall.html">Memory Wall</a></li>
+
+     <li><a href ="next-chapter.html">Next Chapter</a></li>
+
+
+
     </ul>
 
 </nav>
@@ -184,9 +191,36 @@
     </div>
 
 </div>
+<div class="music-player">
 
+    <div class="equalizer">
 
-<script type="module" src="../js/guestbook.js"></script>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+
+    </div>
+
+    <span class="music-title">
+
+        🎵 Graduation Theme
+
+    </span>
+
+    <button id="musicBtn">▶</button>
+
+    <audio id="bgMusic" loop>
+
+        <source src="assets/music/graduation-theme.mp3" type="audio/mpeg">
+
+    </audio>
+
+</div>
+
+<script src="js/music.js"></script>
+<script type="module" src="js/guestbook.js"></script>
+
 </body>
 
 </html>

@@ -12,6 +12,7 @@
 
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/next-chapter.css">
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
 </head>
 
@@ -36,6 +37,7 @@
     <ul>
 
         <li><a href="index.html">Home</a></li>
+        <li><a href="#countdown">Journey</a></li>
         <li><a href="gallery.html">Gallery</a></li>
         <li><a href="memory-wall.html">Memory Wall</a></li>
         <li><a href="guestbook.html">Guestbook</a></li>
@@ -113,40 +115,43 @@
 
     </p>
 
-   <a href="mailto:kebutimoreen@gmail.com" class="connect-card">
+   <div class="social-links">
 
-    <div class="connect-icon">📧</div>
+    <div class="social-links">
 
-   <h3>Email →</h3>
+    <a href="mailto:kebutimoreen@gmail.com" title="Email">
 
-    <p>Click to send me an email</p>
+        <i class="fas fa-envelope"></i>
 
-</a>
+        <span>Email</span>
 
-<a href="https://www.linkedin.com/in/yourprofile"
-   target="_blank"
-   class="connect-card">
+    </a>
 
-    <div class="connect-icon">💼</div>
+    <a
+        href="https://www.linkedin.com/in/kebuti-moreen-681a75265/"
+        target="_blank"
+        title="LinkedIn">
 
-   <h3>LinkedIn →</h3>
+        <i class="fab fa-linkedin"></i>
 
-    <p>https://www.linkedin.com/in/kebuti-moreen-681a75265/</p>
+        <span>LinkedIn</span>
 
-</a>
-<a href="https://github.com/kebuti"
-   target="_blank"
-   class="connect-card">
+    </a>
 
-    <div class="connect-icon">🐱</div>
+    <a
+        href="https://github.com/kebuti"
+        target="_blank"
+        title="GitHub">
 
-    <h3>GitHub →</h3>
+        <i class="fab fa-github"></i>
 
-    <p>https://github.com/kebuti</p>
+        <span>GitHub</span>
 
-</a>
-</section>
+    </a>
 
+</div>
+
+</div>
 <section class="quote-section">
 
     <blockquote>
@@ -200,6 +205,34 @@
     </small>
 
 </footer>
+<div class="music-player">
+
+    <div class="equalizer" id="equalizer">
+
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+
+</div>
+
+    <span class="music-title">
+
+        🎵 Graduation Theme
+
+    </span>
+
+    <button id="musicBtn">▶</button>
+
+    <audio id="bgMusic" loop>
+
+        <source src="assets/music/graduation-theme.mp3" type="audio/mpeg">
+
+    </audio>
+
+</div>
+
+<script src="js/music.js"></script>
 
 </body>
 
