@@ -1053,9 +1053,15 @@ nav ul a{
 
 }
 
+.timeline-content{
+
+    padding:16px;
+
+}
+
 .timeline-item{
 
-    width:45%;
+    width:40%;
 
 }
 
@@ -1069,7 +1075,7 @@ nav ul a{
 
 .timeline-item.right{
 
-    left:55%;
+    left:58%;
 
     padding-left:20px;
 
