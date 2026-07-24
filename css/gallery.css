@@ -284,12 +284,12 @@ body{
 @media (max-width:768px){
 
     .gallery-page h1{
-        font-family:"Patrick Hand", cursive;
+        font-family:'Cormorant Garamond',serif;
         font-size:2.8rem;
     }
 
     .gallery-page p{
-        font-family:"Patrick Hand", cursive;
+        font-family:'Cormorant Garamond',serif;
         font-size:1.3rem;
     }
 
