@@ -740,30 +740,29 @@ to{
     }
 
     /* Main container */
-    .guestbook-container{
+   .guestbook-container{
 
-        width:95%;
-        padding:20px;
+    display:flex;
 
-        display:flex;
-        flex-direction:column;
+    flex-direction:column;
 
-        gap:30px;
+    gap:25px;
 
-    }
+    width:95%;
 
+    padding:20px;
+
+}
     /* Messages section */
+.messages-section{
 
-    .messages-section{
+    order:2;
 
-        width:100%;
+    border-right:none;
 
-        padding:25px;
+    padding:25px;
 
-        border-right:none;
-
-    }
-
+}
     .messages-section h2{
 
         font-size:26px;
@@ -771,20 +770,20 @@ to{
     }
 
     /* Form */
+ .form-section{
 
-    .form-section{
+    order:1;
 
-        position:static;
+    position:static;
 
-        padding-left:0;
+    padding-left:0;
 
-    }
-
+}
     .guestbook-card{
 
         width:100%;
 
-        padding:28px;
+        padding:22px;
 
     }
 
@@ -830,7 +829,7 @@ to{
 
     .message-card h3{
 
-        font-size:20px;
+        font-size:18px;
 
     }
 
