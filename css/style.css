@@ -934,3 +934,64 @@ gap:15px;
     animation:equalizer .8s infinite ease-in-out;
 
 }
+
+/* ===========================
+   Mobile Navigation
+=========================== */
+
+@media (max-width:768px){
+
+nav{
+
+    padding:12px;
+
+}
+
+nav .logo{
+
+    font-size:1.2rem;
+
+    flex-shrink:0;
+
+}
+
+nav ul{
+
+    display:flex;
+
+    flex-wrap:nowrap;
+
+    overflow-x:auto;
+
+    overflow-y:hidden;
+
+    white-space:nowrap;
+
+    gap:10px;
+
+    scrollbar-width:none;
+
+    -ms-overflow-style:none;
+
+}
+
+nav ul::-webkit-scrollbar{
+
+    display:none;
+
+}
+
+nav ul li{
+
+    flex:0 0 auto;
+
+}
+
+nav ul a{
+
+    font-size:.85rem;
+
+    padding:8px 14px;
+
+}
+}

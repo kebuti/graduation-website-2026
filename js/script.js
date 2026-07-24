@@ -155,11 +155,11 @@ window.addEventListener("load", () => {
 
                 message.style.opacity = "1";
 
-            },500);
+            },200);
 
         }
 
-    },2200);   // ← each message stays for 2.5 seconds
+    },800);   // ← each message stays for 2.5 seconds
 
     setTimeout(() => {
 
@@ -167,6 +167,6 @@ window.addEventListener("load", () => {
 
         loader.classList.add("loader-hidden");
 
-    },11000); // 5 messages × 2.5 seconds
+    },2500); // 5 messages × 2.5 seconds
 
 });
