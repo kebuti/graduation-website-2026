@@ -710,3 +710,168 @@ to{
     color:#555;
 
 }
+
+/*======================================
+    MOBILE RESPONSIVE
+======================================*/
+
+@media (max-width:768px){
+
+    /* Page */
+    .guestbook-page{
+        padding-top:110px;
+        padding-bottom:40px;
+    }
+
+    /* Header */
+    .guestbook-header{
+        margin-bottom:35px;
+        padding:0 20px;
+    }
+
+    .guestbook-header h1{
+        font-size:42px;
+        line-height:1.2;
+    }
+
+    .guestbook-header p{
+        font-size:18px;
+        line-height:1.7;
+    }
+
+    /* Main container */
+    .guestbook-container{
+
+        width:95%;
+        padding:20px;
+
+        display:flex;
+        flex-direction:column;
+
+        gap:30px;
+
+    }
+
+    /* Messages section */
+
+    .messages-section{
+
+        width:100%;
+
+        padding:25px;
+
+        border-right:none;
+
+    }
+
+    .messages-section h2{
+
+        font-size:26px;
+
+    }
+
+    /* Form */
+
+    .form-section{
+
+        position:static;
+
+        padding-left:0;
+
+    }
+
+    .guestbook-card{
+
+        width:100%;
+
+        padding:28px;
+
+    }
+
+    .guestbook-card h2{
+
+        font-size:28px;
+
+    }
+
+    /* Form fields */
+
+    input,
+    select,
+    textarea{
+
+        font-size:16px;
+
+        padding:15px;
+
+    }
+
+    textarea{
+
+        min-height:140px;
+
+    }
+
+    button{
+
+        padding:16px;
+
+        font-size:17px;
+
+    }
+
+    /* Message cards */
+
+    .message-card{
+
+        padding:20px;
+
+    }
+
+    .message-card h3{
+
+        font-size:20px;
+
+    }
+
+    .message-card p{
+
+        font-size:15px;
+
+        line-height:1.7;
+
+    }
+
+    /* Celebration popup */
+
+    .celebration-card{
+
+        padding:35px 25px;
+
+    }
+
+    .celebration-card h2{
+
+        font-size:28px;
+
+    }
+
+    .cheers{
+
+        font-size:36px;
+
+    }
+
+    /* Toast */
+
+    .toast{
+
+        left:20px;
+        right:20px;
+        bottom:20px;
+
+        text-align:center;
+
+    }
+
+}
