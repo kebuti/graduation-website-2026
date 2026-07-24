@@ -165,10 +165,10 @@ body{
 
     position:relative;
     
-    z-index:2;v
+    z-index:2;
 
 }
-}
+
 
 .welcome{
 
@@ -666,6 +666,7 @@ nav a.active::after{
 
 }
 
+
 .loader-content{
 
     text-align:center;
@@ -967,7 +968,10 @@ nav ul{
 
     white-space:nowrap;
 
-    gap:10px;
+    gap:12px;
+
+    width:max-content;
+
 
     scrollbar-width:none;
 
@@ -994,4 +998,156 @@ nav ul a{
     padding:8px 14px;
 
 }
+
+.countdown{
+
+    padding:70px 20px;
+
+}
+
+.countdown h2{
+
+    font-size:32px;
+
+    margin-bottom:35px;
+
+}
+
+.countdown-container{
+
+    gap:12px;
+
+    justify-content:center;
+
+    flex-wrap:nowrap;
+
+}
+
+.time-box{
+
+    width:78px;
+
+    padding:15px 8px;
+
+}
+
+.time-box h1{
+
+    font-size:30px;
+
+}
+
+.time-box p{
+
+    font-size:12px;
+
+    letter-spacing:1px;
+
+}
+
+.timeline-container::before{
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+}
+
+.timeline-item{
+
+    width:45%;
+
+}
+
+.timeline-item.left{
+
+    left:0;
+
+    padding-right:20px;
+
+}
+
+.timeline-item.right{
+
+    left:55%;
+
+    padding-left:20px;
+
+}
+
+.timeline-content h3{
+
+    font-size:16px;
+
+}
+
+.timeline-content p{
+
+    font-size:13px;
+
+    line-height:1.5;
+
+}
+
+
+.hero{
+
+    min-height:85vh;
+
+    padding:110px 20px 60px;
+
+}
+
+.title{
+
+    font-size:54px;
+
+}
+
+.name{
+
+    font-size:28px;
+
+}
+
+.quote{
+
+    width:100%;
+
+    font-size:17px;
+
+}
+
+.music-player{
+
+    right:12px;
+
+    bottom:12px;
+
+    padding:8px 14px;
+
+}
+
+#musicBtn{
+
+    width:42px;
+
+    height:42px;
+
+    font-size:18px;
+
+}
+}
+/*loading  page*/
+body.loading{
+
+    overflow:hidden;
+
+    height:100vh;
+
+    touch-action:none;
+
+    user-select:none;
+
+
 }

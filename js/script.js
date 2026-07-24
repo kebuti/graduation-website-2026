@@ -1,3 +1,4 @@
+document.body.classList.add("loading");
 console.log("JavaScript is working!");
 // Graduation Date
 
@@ -159,14 +160,15 @@ window.addEventListener("load", () => {
 
         }
 
-    },800);   // ← each message stays for 2.5 seconds
+    },800);   
+setTimeout(() => {
 
-    setTimeout(() => {
+    clearInterval(interval);
 
-        clearInterval(interval);
+    loader.classList.add("loader-hidden");
 
-        loader.classList.add("loader-hidden");
+    document.body.classList.remove("loading");
 
-    },2500); // 5 messages × 2.5 seconds
+},2500);
 
 });
