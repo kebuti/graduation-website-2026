@@ -315,4 +315,36 @@ body{
         border-radius:14px;
     }
 
+    .gallery-page h1{
+
+    text-align:center;
+
+    color:#6A1B9A;
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:50px;
+
+    font-weight:400;
+
+}
+
+.gallery-page p{
+
+    text-align:center;
+
+    margin:20px auto 50px;
+
+    max-width:700px;
+
+    line-height:1.8;
+
+   font-family:'Cormorant Garamond',serif;
+
+    font-size:28px;
+
+    color:#444;
+
+}
+
 }
